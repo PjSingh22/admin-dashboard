@@ -49,14 +49,21 @@ body, html {
   grid-area: main;
 }
 
-.main-links {
-  margin-top: 20px;
+.main-links, .other-links {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
   margin: 50px 0 0 10px;
 }
 
-.main-link {
-  display: flex;
+.link {
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  column-gap: 40px;
+}
+
+.link > p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
