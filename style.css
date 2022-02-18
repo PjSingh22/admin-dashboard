@@ -11,14 +11,15 @@ body, html {
 }
 
 #container {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "sidebar header header"
-                      "sidebar main main"
-                      "sidebar main main"
-                      "sidebar main main";
+  grid-template-areas: "sidebar header header header"
+                      "sidebar main main main"
+                      "sidebar main main main"
+                      "sidebar main main main";
 }
 
 .header {
@@ -29,6 +30,7 @@ body, html {
 .side-bar {
   background-color: rgb(25,146,212);
   grid-area: sidebar;
+  padding: 10px;
 }
 
 .title-container {
@@ -45,4 +47,16 @@ body, html {
 .main-content {
   background-color: yellow;
   grid-area: main;
+}
+
+.main-links {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin: 50px 0 0 10px;
+}
+
+.main-link {
+  display: flex;
 }
