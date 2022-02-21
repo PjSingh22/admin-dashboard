@@ -72,7 +72,9 @@ body, html {
 
 /* HEADER STYLES */
 .header {
+  background-color: rgb(255,255,255);
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .upper-header {
@@ -102,17 +104,70 @@ body, html {
 .profile-picture {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   background-color: rgb(226,232,240);
   margin-right: 10px;
 }
 
+.pic {
+  border-radius: 50%;
+}
+
 .profile-links {
   display: grid;
-  grid-template-columns: 1fr 1fr 7fr;
+  grid-template-columns: 1fr 1fr 4fr;
   grid-column: 4 / 5;
   align-items: center;
   justify-content: start;
   gap: 20px;
   margin-right: 40px;
 }
+.profile-links > p {
+  font-weight: bold;
+}
+
+.bottom-header {
+  margin-top: 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 25px 1fr;
+}
+
+.right-half > button {
+  padding: 10px;
+  border-radius: 30px;
+  width: 100px;
+  border: none;
+  background-color: rgb(25,146,212);
+  color: white;
+  font-weight: bold;
+}
+
+.left-half {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50px 300px;
+  gap: 20px;
+  grid-column: 2 / 3;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.welcome-msg > p:first-child {
+  font-size: 12px;
+}
+
+.right-half {
+  display: grid;
+  width: 30%;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 10px;
+  grid-column: 3 / 5;
+}
+
+.welcome-pic {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(226,232,240);
+}
+
