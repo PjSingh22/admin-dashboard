@@ -22,13 +22,6 @@ body, html {
                       "sidebar main main main";
 }
 
-.header {
-  background-color: green;
-  grid-area: header;
-  padding: 10px;
-  padding-left: 30px;
-}
-
 .side-bar {
   background-color: rgb(25,146,212);
   grid-area: sidebar;
@@ -48,7 +41,6 @@ body, html {
 
 .main-content {
   background-color: yellow;
-  grid-area: main;
 }
 
 .main-links, .other-links {
@@ -75,6 +67,8 @@ body, html {
   background-color: rgb(255,255,255);
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-area: header;
+  padding: 10px 10px 20px 30px;
 }
 
 .upper-header {
@@ -89,7 +83,7 @@ body, html {
   grid-template-columns: 30px 1fr;
   align-items: center;
   justify-content: center;
-  margin-left: 10px;
+  margin-left: 20px;
   grid-column: 1 / 4;
 }
 
@@ -171,3 +165,9 @@ body, html {
   background-color: rgb(226,232,240);
 }
 
+/* MAIN CONTENT */
+
+.main-content {
+  grid-area: main;
+  background-color: rgb(226,232,240)
+}
