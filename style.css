@@ -6,13 +6,13 @@
 }
 
 /* APPLICATION STYLES */
-body, html {
+/* body, html {
   height: 100%;
-}
+} */
 
 #container {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 2fr;
   grid-template-rows: 1fr 2fr 2fr 2fr;
@@ -168,6 +168,100 @@ body, html {
 /* MAIN CONTENT */
 
 .main-content {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-area: main;
-  background-color: rgb(226,232,240)
+  background-color: rgb(226,232,240);
+  padding: 20px;
+  height: 100vh;
+  align-content: center;
+}
+
+.projects {
+  padding: 20px;
+  grid-column: 1 / 3;
+}
+
+.proj-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px 10px 10px 10px;
+  width: 30vw;
+  height: 20vh;
+  background-color: rgb(255,255,255);
+  border-radius: 10px;
+  border-left: 10px solid yellow;
+}
+
+.card > p:nth-child(2) {
+  color: rgb(153,153,153);
+  font-size: 0.9rem;
+}
+
+.card-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  align-items: center;
+  justify-self: end;
+}
+
+.proj-title {
+  font-weight: bold;
+}
+
+.side-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  width: 15vw;
+  height: 10vw;
+  padding: 10px;
+  grid-column: 5 / 5;
+}
+
+/* for announcement */
+
+.info-title {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.info-detail {
+  font-size: 0.6rem;
+  color: rgb(153,153,153);
+  margin-bottom: 5px;
+}
+
+.info:not(:last-child) {
+  border-bottom: 1px solid rgb(153,153,153);
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.side-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 30px;
+  background-color: rgb(255,255,255);
+  border-radius: 5px;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  gap: 20px;
 }
